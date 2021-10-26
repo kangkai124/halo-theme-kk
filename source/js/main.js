@@ -273,7 +273,8 @@ function toggleWeChat() {
 
 function scollTo() {
     var postHeight = $("#homeHeader").height();
-    window.scroll({top: postHeight, behavior: "smooth"});
+    var navHeaderHeighgt = $("#navHeader").height();
+    window.scroll({top: postHeight - navHeaderHeighgt, behavior: "smooth"});
 }
 
 function generateId() {
