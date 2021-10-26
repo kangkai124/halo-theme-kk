@@ -54,10 +54,8 @@
   </#if>
 
   <#if settings.enabled_index_cover_height!true>
-  @media only screen and (min-width: 861px) {
-    .home-cover {
-      height: 100vh !important;
-    }
+  .home-cover {
+    height: 100vh !important;
   }
 
   </#if>
