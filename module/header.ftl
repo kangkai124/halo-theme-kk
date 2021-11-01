@@ -1,4 +1,4 @@
-<header class="nav-wrapper -sticky  <#if settings.default_hide_menu!true> <#else>nav-bg-fff</#if>" id="navHeader">
+<#--  <header class="nav-wrapper -sticky  <#if settings.default_hide_menu!true> <#else>nav-bg-fff</#if>" id="navHeader">
     <button class="collapse-nav" onClick="collapseNav()" id="collapseNav" style="<#if settings.default_hide_menu!true> <#else>display:none</#if>">
         <div class="collapse-burger -squeeze">
             <span class="burger-lines"></span>
@@ -59,4 +59,10 @@
             </div>
         </#if>
     </nav>
+</header>  -->
+<header class="gallery-header">
+  <button class="navbar-toggle" onclick="toggleNav()">
+    <img src="${theme_base!}/source/images/header.png" />
+  </button>
+  KK
 </header>

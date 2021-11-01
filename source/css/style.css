@@ -6,12 +6,7 @@ html {
   margin: 0;
 }
 html {
-  font-size: 14px;
-}
-@media screen and (max-width: 359px) {
-  html {
-    font-size: 12px;
-  }
+  font-size: 62.5%;
 }
 body {
   margin: 0;
@@ -399,6 +394,29 @@ a {
 }
 .icon-toc:before {
   content: "\e630";
+}
+.gallery-header {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: -10rem;
+  bottom: 0;
+  width: 10rem;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-header .navbar-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 11.5rem;
+  padding: 0.5rem 0.4rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: rgba(30, 62, 63, 0.25);
+  width: 3rem;
+}
+.gallery-header.nav-on {
+  right: 0;
 }
 .nav-wrapper {
   background-color: var(--header-bg-color);

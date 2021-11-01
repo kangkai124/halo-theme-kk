@@ -121,19 +121,24 @@ function handleScrollMenu() {
     }
 }
 
-function collapseNav() {
-    var bugger = $('.collapse-burger');
-    bugger.toggleClass('open');
-    var nav = $('#navHeader .nav');
+// function collapseNav() {
+//     var bugger = $('.collapse-burger');
+//     bugger.toggleClass('open');
+//     var nav = $('#navHeader .nav');
 
-    nav.toggleClass('opacity-100')
-    if (nav.hasClass('opacity-100')) {
-        nav.removeClass('slideOut');
-        nav.addClass('slideIn');
-    } else {
-        nav.addClass('slideOut');
-        nav.removeClass('slideIn');
-    }
+//     nav.toggleClass('opacity-100')
+//     if (nav.hasClass('opacity-100')) {
+//         nav.removeClass('slideOut');
+//         nav.addClass('slideIn');
+//     } else {
+//         nav.addClass('slideOut');
+//         nav.removeClass('slideIn');
+//     }
+// }
+
+function toggleNav() {
+  var header = $('.gallery-header');
+  header.toggleClass('nav-on');
 }
 
 // 图片
@@ -272,9 +277,9 @@ function toggleWeChat() {
 }
 
 function scollTo() {
+    console.log(123);
     var postHeight = $("#homeHeader").height();
-    var navHeaderHeighgt = $("#navHeader").height();
-    window.scroll({top: postHeight - navHeaderHeighgt, behavior: "smooth"});
+    window.scroll({top: postHeight, behavior: "smooth"});
 }
 
 function generateId() {
