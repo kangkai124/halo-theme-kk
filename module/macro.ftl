@@ -23,7 +23,9 @@
     </body>
     <#include "plugins.ftl"/>
 <#--    <script src="${theme_base!}/source/js/main.js?ver=${.now?long}"></script>-->
-        <script src="${theme_base!}/source/js/main.js?ver=202101052201"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="${theme_base!}/source/js/smoothscoll.js?ver=20211102"></script>
+        <script src="${theme_base!}/source/js/main.js?ver=20211102"></script>
 
     <#include "script.ftl">
 

@@ -277,7 +277,6 @@ function toggleWeChat() {
 }
 
 function scollTo() {
-    console.log(123);
     var postHeight = $("#homeHeader").height();
     window.scroll({top: postHeight, behavior: "smooth"});
 }
